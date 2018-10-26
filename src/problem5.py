@@ -2,9 +2,9 @@
 Final exam, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Drew Borman.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -189,7 +189,12 @@ def run_test_problem5():
     
     
 def problem5(x):
-    """
+    while True:
+        if is_prime(x) and is_prime(sum_of_digits(x)):
+            return x
+        x = x + 1
+
+        """
     What comes in:  An integer  x  that is at least 2.
     What goes out:
       -- Returns the smallest prime such that:
@@ -213,7 +218,7 @@ def problem5(x):
       :type x:    int
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
